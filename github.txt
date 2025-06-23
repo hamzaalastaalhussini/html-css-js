@@ -1,0 +1,3 @@
+git clone https://github.com/hamzaalastaalhussini/html-css-js.git
+cd html-css-js
+git checkout ayad   # or hamdan or hamza
