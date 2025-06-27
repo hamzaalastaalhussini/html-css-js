@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Learning Alone</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6fa;
+            color: #222;
+        }
+        header {
+            background: #2d3e50;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #1a2533;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0.75rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffb347;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .about-img {
+            float: right;
+            margin-left: 2rem;
+            width: 180px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+        }
+        input, textarea {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            background: #2d3e50;
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #ffb347;
+            color: #222;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #1a2533;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem;
+            }
+            .about-img {
+                float: none;
+                display: block;
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hamza Learning Alone</h1>
+        <p>Empowering self-learners with resources and inspiration</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>
+                Welcome to <strong>Hamza Learning Alone</strong>, a space dedicated to independent learners. Here you'll find tips, resources, and motivation to help you master new skills on your own.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80" alt="Learning" class="about-img">
+            <p>
+                My name is Hamza, and I'm passionate about self-education. I believe anyone can learn anything with the right mindset and resources. On this site, I share my journey, favorite tools, and advice for fellow solo learners.
+            </p>
+            <ul>
+                <li>Curated learning resources</li>
+                <li>Study tips and productivity hacks</li>
+                <li>Personal stories and project showcases</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form onsubmit="event.preventDefault(); alert('Thank you for reaching out!');">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Hamza Learning Alone. All rights reserved.
+    </footer>
+</body>
+</html>
